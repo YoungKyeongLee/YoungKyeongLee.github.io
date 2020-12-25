@@ -1,10 +1,16 @@
 <div style="background-color:#E4F7BA;height:200px;">
   <h1> 깃 허브 블로그 만들기 </h1>
+  # 마크업 언어) 제목 테스트
 </div>
+<div>
+## 테스트
 1. 새 깃 허브 Repository를 만든다.(Add a README file은 체크하면 편함)
   형식 : [계정명].github.io
-  
+</div>
+<div>
 2. Settings -> GitHub Pages -> Theme Chooser 에서 테마를 고른다.
   최초 : Choose theme | 그 후 : Change theme
-
+</div>
+<div>
 3. Add file -> Create new file 을 누른 후 index.html 파일을 만들어 최초 페이지를 만든다.
+</div>
