@@ -13,22 +13,21 @@
 body{
 	margin: 0px;
 }
-header.header {
+header {
 	-ms-user-select: none; 
  	-moz-user-select: -moz-none;
  	-khtml-user-select: none;
  	-webkit-user-select: none;
  	user-select: none;
+}
+/* 통합 */
+header.header {
 	background-color: black;
 	width: 100%;
-	height: 100px;
 	position: fixed;
 }
-header .header_div {
-	width: 98%;
-	min-width: 1200px;
+header .header_div{
 	margin: 10px;
-	display: inline-flex;
 	padding: 10px;
 }
 header .header_icon {
@@ -40,9 +39,6 @@ header .header_icon {
 	font-size: 40pt;
 	font-family: 'Gugi', cursive;
 	margin: 0px;
-}
-header .header_icon a:hover{
-	color: #FFE08C;
 }
 header .header_text{
 	height:50px;
@@ -58,13 +54,11 @@ header .header_nav {
 	height: 50px;
 	line-height: 50px;
 }
-
 header .header_nav_menu {
 	margin: 0px;
 	padding: 0px;
 	display: inline-flex;
 }
-
 header .header_nav_menu li {
 	color: #8C8C8C;
 	display: inline-block;
@@ -74,6 +68,39 @@ header .header_nav_menu li {
 	text-align: center;
 	padding-left: 7px;
 	padding-right: 7px;
+}
+/* 반응형1 */
+@media (min-width: 1221px){
+	header.header {
+		height: 100px;
+	}
+	header .header_div{
+		display: inline-flex;
+		color: orange;
+	}
+}
+header .header_icon a:hover{
+	color: #FFE08C;
+}
+/* 반응형2 */
+@media (max-width: 1220px){
+	header.header {
+		height:200px;
+	}
+	header .header_div{
+		display: block;
+		height: 210px;
+		color: orange;
+	}
+	
+	header .header_icon{
+		margin: auto;
+ 		margin-bottom: 10px;
+	}
+	header .header_nav{
+		margin: auto;
+		margin-top: 10px;
+	}
 }
 
 header .header_nav_menu li:hover {
@@ -124,7 +151,7 @@ footer.footer{
 <body>
 	<header class="header">
 		<div class="header_div">
-			<h1 class="header_icon"><a class="name">이</a><a class="name">영</a><a class="name">경</a></h1>
+			<div class="header_icon"><a class="name">이</a><a class="name">영</a><a class="name">경</a></div>
 			<div class="header_text">YoungKyeong's Protfolio</div>
 			<nav class="header_nav">
 				<ul class="header_nav_menu">
