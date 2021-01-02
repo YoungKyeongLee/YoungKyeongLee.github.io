@@ -78,9 +78,13 @@ header .header_nav_menu li {
 		display: inline-flex;
 		color: orange;
 	}
-}
-header .header_icon a:hover{
-	color: #FFE08C;
+	.section_blank{
+		height:100px;
+		background-color: #5D5D5D;
+	}
+	header .header_icon a:hover{
+		color: #FFE08C;
+	}
 }
 /* 반응형2 */
 @media (max-width: 1220px){
@@ -100,6 +104,10 @@ header .header_icon a:hover{
 	header .header_nav{
 		margin: auto;
 		margin-top: 10px;
+	}
+	.section_blank{
+		height:200px;
+		background-color: #5D5D5D;
 	}
 }
 
@@ -122,10 +130,7 @@ header .header_nav_menu li.long {
 section.section {
 	border: 1px solid purple;
 }
-.section_blank{
-	height:100px;
-	background-color: #5D5D5D;
-}
+
 section .section_art {
 	height: 500px;
 	font-size: 100pt;
