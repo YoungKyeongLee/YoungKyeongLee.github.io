@@ -9,177 +9,17 @@
 <!-- header_text 글씨체 -->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+<link href="css/fullPage.css" rel="stylesheet">
+<link href="css/miniPage.css" rel="stylesheet">
 <style type="text/css">
-body{
-	margin: 0px;
-}
-header{
-	user-select: none;
-}
-@media (min-width: 1221px){
-	header.header{
-		background-color: black;
-		width: 100%;
-		position: fixed;
-		height: 100px;
-	}
-	header .header_div {
-		width: 98%;
-		min-width: 1200px;
-		margin: 10px;
-		display: inline-flex;
-		padding: 10px;
-	}
-	header .header_icon {
-		min-width: 220px;
-		width: 220px;
-		height: 50px;
-		color: #8C8C8C;
-		text-align: center;
-		font-size: 40pt;
-		font-family: 'Gugi', cursive;
-		margin: 0px;
-	}
-	header .header_icon a:hover{
-		color: #FFE08C;
-	}
-	header .header_text{
-		height:50px;
-	 	width: 100%;
-	 	min-width: 420px;
-		color: white;
-		font-size: 30pt;
-		font-family: 'Yellowtail', cursive;
-		text-align: center;
-	}
-	header .header_nav {
-		width: 560px;
-		height: 50px;
-		line-height: 50px;
-	}
-	header .header_nav_menu {
-		margin: 0px;
-		padding: 0px;
-		display: inline-flex;
-	}
-	header .header_nav_menu li {
-		color: #8C8C8C;
-		display: inline-block;
-		height: 46px;
-		font-size: 22pt;
-		font-weight: bold;
-		text-align: center;
-		padding-left: 7px;
-		padding-right: 7px;
-	}
-	header .header_nav_menu li:hover {
-		color:#6799FF;
-		font-size:25pt;
-		cursor: pointer;
-	}
-	
-	header .header_nav_menu li.short {
-		min-width: 103px;
-		width: 103px;
-	}
-	
-	header .header_nav_menu li.long {
-		min-width: 149px;
-		width: 149px;
-	}
-	section .section_blank{
-		height:100px;
-		background-color: #5D5D5D;
-	}
-}
-/*=======================================*/
-@media (max-width: 1220px){
-	header.header{
-		background-color: black;
-		width: 100%;
-		position: fixed;
-		height: 200px;
-	}
-	header .header_div{
-		width: 98%; /*auto*/
-		margin: 10px;
-		display: block;
-		padding: 10px;
-	}
-	header .header_icon{
-		min-width: 220px;
-		width: 220px;
-		height: 50px;
-		color: #8C8C8C;
-		text-align: center;
-		font-size: 40pt;
-		font-family: 'Gugi', cursive;
-		margin: auto;
- 		margin-bottom: 10px;
-	}
-	header .header_icon a:hover{
-		color: #FFE08C;
-	}
-	header .header_text{
-		height:50px;
-	 	width: 100%;
-	 	min-width: 420px;
-		color: white;
-		font-size: 30pt;
-		font-family: 'Yellowtail', cursive;
-		text-align: center;
-	}
-	header .header_nav {
-		width: 560px;
-		height: 50px;
-		line-height: 50px;
-		margin: auto;
-		margin-top: 10px;
-	}
-	header .header_nav_menu {
-		margin: 0px;
-		padding: 0px;
-		display: inline-flex;
-		margin: auto;
-		margin-top: 10px;
-		
-	}
-	header .header_nav_menu li {
-		color: #8C8C8C;
-		display: inline-block;
-		height: 46px;
-		font-size: 22pt;
-		font-weight: bold;
-		text-align: center;
-		padding-left: 7px;
-		padding-right: 7px;
-	}
-	header .header_nav_menu li:hover {
-		color:#6799FF;
-		font-size:25pt;
-		cursor: pointer;
-	}
-	
-	header .header_nav_menu li.short {
-		min-width: 103px;
-		width: 103px;
-	}
-	
-	header .header_nav_menu li.long {
-		min-width: 149px;
-		width: 149px;
-	}
-	section .section_blank{
-		height:200px;
-		background-color: #5D5D5D;
-	}
-}
 /* 미완성 부분(추후 반응형에 따라 변경해야함)*/
 section .section_art {
 	height: 500px;
-	font-size: 100pt;
+/* 	font-size: 100pt; */
 }
-
+section h1{
+	
+}
 section .art_1 {
 }
 
@@ -200,8 +40,8 @@ footer.footer{
 <body>
 	<header class="header">
 		<div class="header_div">
-			<div class="header_icon"><a class="name">이</a><a class="name">영</a><a class="name">경</a></div>
-			<div class="header_text">YoungKyeong's Portfolio</div>
+			<div class="header_icon"><a>이</a><a>영</a><a>경</a></div>
+			<div class="header_text"><a>YoungKyeong's</a> <a>Portfolio</a></div>
 			<nav class="header_nav">
 				<ul class="header_nav_menu">
 					<li onclick="location.href='#art_1'" class="short">HOME</li>
@@ -216,7 +56,34 @@ footer.footer{
 		<div class="section_blank" id="art_1"></div>
 		<article class="section_art art_1">HOME</article>
 		<div class="section_blank" id="art_2"></div>
-		<article class="section_art art_2">PROFILE</article>
+		<article class="section_art art_2">
+			<div>
+					<h1>Profile</h1>
+					<img alt="증명사진 첨부" src="">
+					<div>이영경</div>
+					<div>백 엔드 개발자[신입]</div>
+					<div>010-6676-0149</div>
+					<div>1996-04-25</div>
+					<div>yanggaeng333@gmail.com</div>
+				</div>
+				<div>
+					<div>About</div>
+					<div>현재 백 엔드 자바 웹 개발자를 지망합니다.</div>
+				</div>
+				<div>
+					<div>기술</div>
+					<div>
+						<img alt="Java" src="">
+						<img alt="spring" src="">
+						<img alt="oracle" src="">
+						<img alt="javascript" src="">
+						<img alt="html" src="">
+						<img alt="css" src="">
+						<img alt="window" src="">
+						<img alt="linux" src="">
+					</div>
+				</div>
+		</article>
 		<div class="section_blank" id="art_3" ></div>
 		<article class="section_art art_3">PROJECT</article>
 		<div class="section_blank" id="art_4"></div>
