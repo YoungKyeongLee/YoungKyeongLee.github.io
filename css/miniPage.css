@@ -2,6 +2,7 @@
 @media (max-width: 1220px){
 	body{
 		margin: 0px;
+		background-color: #F2FFED;
 	}
 	header{
 		user-select: none;
@@ -10,7 +11,7 @@
 		background-color: black;
 		width: 100%;
 		position: fixed;
-		height: 200px;
+		height: 300px;
 	}
 	header .header_div{
 		width: 98%; /*auto*/
@@ -21,10 +22,10 @@
 	header .header_icon{
 		min-width: 220px;
 		width: 220px;
-		height: 50px;
+		height: 70px;
 		color: #8C8C8C;
 		text-align: center;
-		font-size: 40pt;
+		font-size: 50pt;
 		font-family: 'Gugi', cursive;
 		margin: auto;
  		margin-bottom: 10px;
@@ -33,11 +34,11 @@
 		color: #FFE08C;
 	}
 	header .header_text{
-		height:50px;
+		height:70px;
 	 	width: 100%;
 	 	min-width: 420px;
 		color: white;
-		font-size: 30pt;
+		font-size: 40pt;
 		font-family: 'Yellowtail', cursive;
 		text-align: center;
 	}
@@ -62,8 +63,9 @@
 	header .header_nav_menu li {
 		color: #8C8C8C;
 		display: inline-block;
-		height: 46px;
-		font-size: 22pt;
+		height: 110px;
+		line-height: 110px;
+		font-size: 26pt;
 		font-weight: bold;
 		text-align: center;
 		padding-left: 7px;
@@ -71,7 +73,7 @@
 	}
 	header .header_nav_menu li:hover {
 		color:#6799FF;
-		font-size:25pt;
+		font-size:23pt;
 		cursor: pointer;
 	}
 	
@@ -84,8 +86,55 @@
 		min-width: 149px;
 		width: 149px;
 	}
+	section .section_art {
+	height: auto;
+	margin-bottom: 50px;
+	}
+	section h1{
+		font-size: 30pt;
+		text-align: center;
+	}
 	section .section_blank{
-		height:200px;
+		height:300px;
 		background-color: #5D5D5D;
+	}
+	section article.art_1 .main_comment{
+		text-align: center;
+	}
+	section article.art_2 .article_div{
+	width: 300px;
+	height: auto;
+	margin: auto;
+ 	display: block;
+	}
+	section article.art_2 .article_part{
+		width: 300px;
+		height: auto;
+		margin-bottom: 50px;
+	}
+	section article.art_2 h2.article_sub{
+		margin-top: 0px;
+	}
+	section article.art_2 .article_part div{
+		font-size: 15pt;
+		padding-bottom: 5px;
+	}
+	section article.art_2 img.photoID{
+		width: 300px;
+		margin: auto;
+	}
+	section article.art_3 .article_div{
+		margin: auto;
+		width: 500px;
+		align
+	}
+	section article.art_3 .article_part{
+		display: block;
+		width: auto;
+	}
+	section article.art_3 .article_inner_part_img img{
+		width: 500px;
+	}
+	section article.art_3 .article_inner_part_txt {
 	}
 }
