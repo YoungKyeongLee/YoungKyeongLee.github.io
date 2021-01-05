@@ -13,23 +13,7 @@
 <link href="css/miniPage.css" rel="stylesheet">
 <style type="text/css">
 /* 미완성 부분(추후 반응형에 따라 변경해야함)*/
-section .section_art {
-	height: 500px;
-/* 	font-size: 100pt; */
-}
-section h1{
-	
-}
-section .art_1 {
-}
-
-section .art_2 {
-}
-
-section .art_3 {
-}
-
-section .art_4 {
+section article.art_4 {
 }
 footer.footer{
 	height: 200px;
@@ -54,40 +38,100 @@ footer.footer{
 	</header>
 	<section class="section">
 		<div class="section_blank" id="art_1"></div>
-		<article class="section_art art_1">HOME</article>
+		
+		<article class="section_art art_1">
+			<h1>HOME</h1>
+			<div class="article_div">
+				<h2 class="main_comment">안녕하십니까? 백엔드 개발자[신입]를 지망하는 이영경 입니다.</h2>
+			</div>
+		</article>
+		
 		<div class="section_blank" id="art_2"></div>
+		
 		<article class="section_art art_2">
-			<div>
-					<h1>Profile</h1>
-					<img alt="증명사진 첨부" src="">
-					<div></div>
-					<div>백 엔드 개발자[신입]</div>
-					<div>010-0000-0000</div>
-					<div>0000-00-00</div>
-					<div>00000@gmail.com</div>
-				</div>
-				<div>
-					<div>About</div>
-					<div>현재 백 엔드 자바 웹 개발자를 지망합니다.</div>
-				</div>
-				<div>
-					<div>기술</div>
-					<div>
-						<img alt="Java" src="">
-						<img alt="spring" src="">
-						<img alt="oracle" src="">
-						<img alt="javascript" src="">
-						<img alt="html" src="">
-						<img alt="css" src="">
-						<img alt="window" src="">
-						<img alt="linux" src="">
+			<h1>Profile</h1>
+			<div class="article_div">
+					<div class="article_part">
+						<img class="photoID" alt="증명사진 첨부" src="img/photoID.jpg">
+					</div>
+					<div class="article_part">
+						<h2 class="article_sub">프로필</h2>
+						<div class="article_txt">이영경</div>
+						<div class="article_txt">백 엔드 개발자[신입]</div>
+						<div class="article_txt">010-0000-0000</div>
+						<div class="article_txt">0000-00-00</div>
+						<div class="article_txt">00000000@gmail.com</div>
+					</div>
+					<div class="article_part">
+						<h2 class="article_sub">About</h2>
+						<div>백 엔드 개발자를 지망합니다.</div>
+						<br>
+						<h2 class="article_sub">기술</h2>
+						<div>
+							<img alt="Java" src="">
+							<img alt="spring" src="">
+							<img alt="oracle" src="">
+							<img alt="javascript" src="">
+							<img alt="html" src="">
+							<img alt="css" src="">
+							<img alt="window" src="">
+							<img alt="linux" src="">
+						</div>
+					</div>
+			</div>
+		</article>
+		
+		<div class="section_blank" id="art_3" ></div>
+		
+		<article class="section_art art_3">
+			<h1>PROJECT</h1>
+			<div class="article_div">
+				<div class="article_part">
+					<div class="article_inner_part_img">
+						<img alt="드럼통 프로젝트" src="img/drumtong.png">
+					</div>
+					<div class="article_inner_part_txt">
+						<h2>드럼통</h2>
+						<div>팀 프로젝트</div>
+						<div>O2O 서비스 기반</div>
 					</div>
 				</div>
+				<div class="article_part">
+					<div class="article_inner_part_img">
+						<img alt="플래너 프로젝트" src="img/plan.png">
+					</div>
+					<div class="article_inner_part_txt">
+						<h2>플래너</h2>
+						<div>개인 프로젝트</div>
+						<div>메모하는 습관</div>
+					</div>
+				</div>
+				<div class="article_part">
+					<div class="article_inner_part_img">
+						<img alt="포트폴리오 프로젝트" src="img/portfolio.png">
+					</div>
+					<div class="article_inner_part_txt">
+						<h2>포트폴리오</h2>
+						<div>개인 프로젝트</div>
+						<div>
+							포트폴리오 포트폴리오 포트폴리오 포트폴리오 포트폴리오
+							포트폴리오 포트폴리오 포트폴리오 포트폴리오 포트폴리오
+							포트폴리오 포트폴리오 포트폴리오 포트폴리오 포트폴리오
+							포트폴리오 포트폴리오 포트폴리오 포트폴리오 포트폴리오
+						</div>
+					</div>
+					
+				</div>
+			</div>
 		</article>
-		<div class="section_blank" id="art_3" ></div>
-		<article class="section_art art_3">PROJECT</article>
+		
 		<div class="section_blank" id="art_4"></div>
-		<article class="section_art art_4">BLOG</article>
+		
+		<article class="section_art art_4">
+			<h1>BLOG</h1>
+			<div class="article_div">
+			</div>
+		</article>
 	</section>
 	<footer class="footer">
 		푸터
