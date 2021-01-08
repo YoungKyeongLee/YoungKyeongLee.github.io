@@ -108,20 +108,41 @@
  	display: block;
 	}
 	section article.art_2 .article_part{
-		width: 300px;
+		width: 400px;
 		height: auto;
 		margin-bottom: 50px;
 	}
 	section article.art_2 h2.article_sub{
 		margin-top: 0px;
 	}
+	section article.art_2 h2.article_sub_mini{
+		margin-top: 50px;
+	}
 	section article.art_2 .article_part div{
-		font-size: 15pt;
+		font-size: 20pt;
 		padding-bottom: 5px;
 	}
 	section article.art_2 img.photoID{
 		width: 300px;
 		margin: auto;
+	}
+	section article.art_2 .skills{
+		display: inline-block;
+		padding:0px;
+	}
+	section article.art_2 .article_part .imgBox{
+		margin: 5px;
+		text-align: center;
+		display: inline-block;
+		width: 100px;
+		height: 125px;
+		font-size: 18pt;
+	}
+	section article.art_2 .imgBox .skill{
+		display: inline-block;
+		width : 90px;
+		height: 90px;
+		border: 1px solid #BDBDBD;
 	}
 	section article.art_3 .article_div{
 		margin: auto;
