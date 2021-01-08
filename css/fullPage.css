@@ -81,7 +81,6 @@
 		width: 149px;
 	}
 	section .section_art {
-		height: auto;
 		margin-top: 100px;
 		padding-bottom: 150px;
 	}
@@ -96,6 +95,9 @@
 	section article.art_1 .main_comment{
 		text-align: center;
 	}
+	section article.art_2{
+		height: 450px;
+	}
 	section article.art_2 .article_div{
 		width: 900px;
 		height: auto;
@@ -103,14 +105,8 @@
 	 	display: flex;
 	}
 	section article.art_2 .article_part{
-		width: 300px;
-		height: 300px;
-	}
-	section article.art_2 .article_txt{
-		height: 40px;
-	}
-	section article.art_2 h2.article_sub{
-		margin-top: 0px;
+		width: 400px;
+		height: 400px;
 	}
 	section article.art_2 .article_part div{
 		font-size: 15pt;
@@ -118,6 +114,29 @@
 	}
 	section article.art_2 img.photoID{
 		width: 250px;
+	}
+	section article.art_2 .article_txt{
+		height: 40px;
+	}
+	section article.art_2 h2.article_sub{
+		margin-top: 0px;
+	}
+	section article.art_2 .skills{
+		display: inline-block;
+		padding:0px;
+	}
+	section article.art_2 .article_part .imgBox{
+		text-align: center;
+		display: inline-block;
+		width: 70px;
+		height: 85px;
+		font-size: 14pt;
+	}
+	section article.art_2 .imgBox .skill{
+		display: inline-block;
+		width : 55px;
+		height: 55px;
+		border: 1px solid #BDBDBD;
 	}
 	section article.art_3 .article_div{
 	margin: auto;
