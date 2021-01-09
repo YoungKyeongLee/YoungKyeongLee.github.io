@@ -2,7 +2,7 @@
 @media (max-width: 1220px){
 	body{
 		margin: 0px;
-		background-color: #F2FFED;
+		background-color: #E6FFFF;
 	}
 	header{
 		user-select: none;
@@ -30,9 +30,6 @@
 		margin: auto;
  		margin-bottom: 10px;
 	}
-	header .header_icon a:hover{
-		color: #FFE08C;
-	}
 	header .header_text{
 		height:70px;
 	 	width: 100%;
@@ -41,9 +38,6 @@
 		font-size: 40pt;
 		font-family: 'Yellowtail', cursive;
 		text-align: center;
-	}
-	header .header_text a:hover{
-		color: green;
 	}
 	header .header_nav {
 		width: 560px;
@@ -96,7 +90,7 @@
 	}
 	section .section_blank{
 		height:300px;
-		background-color: #5D5D5D;
+		background-color: #B0D0D6;
 	}
 	section article.art_1 .main_comment{
 		text-align: center;
@@ -156,6 +150,18 @@
 	section article.art_3 .article_inner_part_img img{
 		width: 500px;
 	}
-	section article.art_3 .article_inner_part_txt {
+	section article.art_3 .article_inner_part_txt button{
+		background-color: red;
+		color:white;
+		cursor: pointer;
+		border: none;
+		width: 100px;
+		height: 25px;
+	}
+	section article.art_3 .article_inner_part_txt button:hover{
+		background: pink;
+		font-weight: bold;
+		width: 105px;
+		height: 25px;
 	}
 }
