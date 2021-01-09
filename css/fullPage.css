@@ -2,7 +2,7 @@
 @media (min-width: 1221px){
 	body{
 		margin: 0px;
-		background-color: #E6FFFF;
+		background-color: white;
 	}
 	header{
 		user-select: none;
@@ -84,7 +84,7 @@
 	}
 	section .section_blank{
 		height:100px;
-		background-color: #B0D0D6;
+		background-color: #EAEAEA;
 	}
 	section article.art_1 .main_comment{
 		text-align: center;
