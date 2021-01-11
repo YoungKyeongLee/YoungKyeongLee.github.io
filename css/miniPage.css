@@ -90,10 +90,11 @@
 	}
 	section .section_blank{
 		height:300px;
-		background-color: #EAEAEA;
+		background-color: white;
 	}
 	section article.art_1 .main_comment{
 		text-align: center;
+		height: 60px;
 	}
 	section article.art_2 .article_div{
 	width: 300px;
