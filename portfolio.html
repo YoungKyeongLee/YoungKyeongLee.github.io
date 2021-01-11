@@ -13,11 +13,36 @@
 <link href="css/miniPage.css" rel="stylesheet">
 <style type="text/css">
 /* 미완성 부분(추후 반응형에 따라 변경해야함)*/
-section article.art_4 {
+section article.art_4{
+	margin-bottom: 150px;
+}
+section article.art_4 div.button{
+	display: block;
+	height: 70px;
+	line-height: 70px;
+	width: 200px;
+	font-size: 30pt;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 20px;
+	background-color: #6799FF;
+	color: white;
+	font-weight: bold;
+	border-radius: 15px;
+}
+section article.art_4 div.button:hover{
+	font-size: 33pt;
+	cursor: pointer;
+	background-color: blue;
+	box-shadow: 5px 5px 5px 5px gray;
 }
 footer.footer{
-	height: 200px;
+	height: 150px;
+	padding: 15px;
 	background-color: #5D5D5D;
+}
+footer.footer div.footer_text{
+	color: #8C8C8C;
 }
 </style>
 </head>
@@ -31,7 +56,7 @@ footer.footer{
 					<li onclick="location.href='#art_1'" class="short">HOME</li>
 					<li onclick="location.href='#art_2'" class="long">PROFILE</li>
 					<li onclick="location.href='#art_3'" class="long">PROJECT</li>
-					<li onclick="location.href='#art_4'" class="short">BLOG</li>
+					<li onclick="location.href='#art_4'" class="short">SITE</li>
 				</ul>
 			</nav>
 		</div>
@@ -42,7 +67,21 @@ footer.footer{
 		<article class="section_art art_1">
 			<h1>HOME</h1>
 			<div class="article_div">
-				<h2 class="main_comment">안녕하십니까? 백엔드 개발자[신입]를 지망하는 이영경 입니다.</h2>
+				<h2 class="main_comment">
+					안녕하십니까?
+				</h2>
+				<h2 class="main_comment">
+					성실함, 끈기, 꼼꼼함, 호기심을 가지고
+				</h2>
+				<h2 class="main_comment">
+					매사에 즐겁게 작업하는 <span>이영경</span> 입니다.
+				</h2>
+				<h2 class="main_comment">
+					현재 백엔드 웹 개발자를 지망합니다.
+				</h2>
+				<h2 class="main_comment">
+				.<br>.<br>.<br>
+				</h2>
 			</div>
 		</article>
 		
@@ -51,35 +90,35 @@ footer.footer{
 		<article class="section_art art_2">
 			<h1>Profile</h1>
 			<div class="article_div">
-					<div class="article_part">
-						<img class="photoID" alt="증명사진 첨부" src="img/photoID.jpg">
-					</div>
-					<div class="article_part">
-						<h2 class="article_sub">프로필</h2>
-						<div class="article_txt">이영경</div>
-						<div class="article_txt">백 엔드 개발자[신입]</div>
-						<div class="article_txt">010-0000-0000</div>
-						<div class="article_txt">0000-00-00</div>
-						<div class="article_txt">00000000@gmail.com</div>
-						<h2 class="article_sub article_sub_mini">About</h2>
-						<div>백 엔드 개발자를 지망합니다.</div>
-					</div>
-					<div class="article_part">
-						<h2 class="article_sub">기술</h2>
-						<ul class="skills">
-							<li class="imgBox"><img class="skill" alt="Java" src="img/java.png">Java</li>
-							<li class="imgBox"><img class="skill" alt="spring" src="img/spring.png">Spring</li>
-							<li class="imgBox"><img class="skill" alt="oracle" src="img/oracle.png">Oracle</li>
-							<li class="imgBox"><img class="skill" alt="javascript" src="img/javascript.png">JavaScript</li>
-							<li class="imgBox"><img class="skill" alt="html" src="img/html.png">HTML</li>
-							<li class="imgBox"><img class="skill" alt="css" src="img/css.png">CSS</li>
-							<li class="imgBox"><img class="skill" alt="windows" src="img/windows.png">Windows</li>
-							<li class="imgBox"><img class="skill" alt="linux" src="img/linux.png">Linux</li>
-							<li class="imgBox"><img class="skill" alt="github" src="img/github.png">Github</li>
-							<li class="imgBox"><img class="skill" alt="git" src="img/git.png">Git</li>
-							<li class="imgBox"><img class="skill" alt="aws" src="img/aws.png">AWS</li>
-						</ul>
-					</div>
+				<div class="article_part photoDiv">
+					<img class="photoID" alt="증명사진 첨부" src="img/photoID.jpg">
+				</div>
+				<div class="article_part">
+					<h2 class="article_sub">프로필</h2>
+					<div class="article_txt">이영경</div>
+					<div class="article_txt">백 엔드 웹 개발[신입]</div>
+					<div class="article_txt">010-0000-0000</div>
+					<div class="article_txt">0000-00-00</div>
+					<div class="article_txt">00000000@gmail.com</div>
+					<h2 class="article_sub article_sub_mini">About</h2>
+					<div>백 엔드 개발자를 지망합니다.</div>
+				</div>
+				<div class="article_part">
+					<h2 class="article_sub">기술</h2>
+					<ul class="skills">
+						<li class="imgBox"><img class="skill" alt="Java" src="img/java.png" title="java">Java</li>
+						<li class="imgBox"><img class="skill" alt="spring" src="img/spring.png">Spring</li>
+						<li class="imgBox"><img class="skill" alt="oracle" src="img/oracle.png">Oracle</li>
+						<li class="imgBox"><img class="skill" alt="github" src="img/github.png">Github</li>
+						<li class="imgBox"><img class="skill" alt="git" src="img/git.png">Git</li>
+						<li class="imgBox"><img class="skill" alt="aws" src="img/aws.png">AWS</li>
+						<li class="imgBox"><img class="skill" alt="javascript" src="img/javascript.png">JavaScript</li>
+						<li class="imgBox"><img class="skill" alt="css" src="img/css.png">CSS</li>
+						<li class="imgBox"><img class="skill" alt="html" src="img/html.png">HTML</li>
+						<li class="imgBox"><img class="skill" alt="windows" src="img/windows.png">Windows</li>
+						<li class="imgBox"><img class="skill" alt="linux" src="img/linux.png">Linux</li>
+					</ul>
+				</div>
 			</div>
 		</article>
 		
@@ -93,7 +132,7 @@ footer.footer{
 						<img alt="드럼통 프로젝트" src="img/drumtong.png">
 					</div>
 					<div class="article_inner_part_txt">
-						<h2>드럼통 <button onclick="location.href='project/aboutDrumtong.html'">코드 자세히...</button></h2>
+						<h2>드럼통 <button onclick="location.href='project/aboutDrumtong'">코드 자세히...</button></h2>
 						<div>팀 프로젝트</div>
 						<div>O2O 서비스 기반</div>
 					</div>
@@ -103,7 +142,7 @@ footer.footer{
 						<img alt="플래너 프로젝트" src="img/plan.png">
 					</div>
 					<div class="article_inner_part_txt">
-						<h2>플래너 <button onclick="location.href='project/aboutPlan.html'">코드 자세히...</button></h2>
+						<h2>플래너 <button onclick="location.href='project/aboutPlan'">코드 자세히...</button></h2>
 						<div>개인 프로젝트</div>
 						<div>메모하는 습관</div>
 					</div>
@@ -113,7 +152,7 @@ footer.footer{
 						<img alt="포트폴리오 프로젝트" src="img/portfolio.png">
 					</div>
 					<div class="article_inner_part_txt">
-						<h2>포트폴리오 <button onclick="location.href='project/aboutPortfolio.html'">코드 자세히...</button></h2>
+						<h2>포트폴리오 <button onclick="location.href='project/aboutPortfolio'">코드 자세히...</button></h2>
 						<div>개인 프로젝트</div>
 						<div>
 							포트폴리오 포트폴리오 포트폴리오 포트폴리오 포트폴리오
@@ -130,13 +169,29 @@ footer.footer{
 		<div class="section_blank" id="art_4"></div>
 		
 		<article class="section_art art_4">
-			<h1>BLOG</h1>
+			<h1>SITE</h1>
 			<div class="article_div">
+				<div onclick="window.open('https://github.com/YoungKyeongLee')" class="button">GITHUB</div>
+				<div onclick="location.href='#'" class="button" target="_blank">BLOG</div>
 			</div>
 		</article>
 	</section>
 	<footer class="footer">
-		푸터
+		<div class="footer_text">
+		포트폴리오(이영경)
+		</div>
+		<div class="footer_text">
+			이메일 : 00000000@gmail.com
+		</div>
+		<div class="footer_text">
+			휴대폰 번호 : 010-0000-0000
+		</div>
+		<div class="footer_text">
+			깃허브 주소 : https://github.com/YoungKyeongLee
+		</div>
+		<div class="footer_text">
+			블로그 주소 : 000000000
+		</div>
 	</footer>
 </body>
 </html>
