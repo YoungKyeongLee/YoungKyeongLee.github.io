@@ -164,4 +164,35 @@
 		width: 105px;
 		height: 25px;
 	}
+	section article.art_4{
+	margin-bottom: 150px;
+	}
+	section article.art_4 div.button{
+		display: block;
+		height: 70px;
+		line-height: 70px;
+		width: 200px;
+		font-size: 30pt;
+		text-align: center;
+		margin: auto;
+		margin-bottom: 20px;
+		background-color: #6799FF;
+		color: white;
+		font-weight: bold;
+		border-radius: 15px;
+	}
+	section article.art_4 div.button:hover{
+		font-size: 33pt;
+		cursor: pointer;
+		background-color: blue;
+		box-shadow: 5px 5px 5px 5px gray;
+	}
+	footer.footer{
+		height: 150px;
+		padding: 15px;
+		background-color: #5D5D5D;
+	}
+	footer.footer div.footer_text{
+		color: #8C8C8C;
+	}
 }
