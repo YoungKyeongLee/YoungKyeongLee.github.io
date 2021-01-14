@@ -2,9 +2,44 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Insert title here</title><!-- 폰트어썸 -->
+<script src="https://kit.fontawesome.com/2f6ba02431.js" crossorigin="anonymous"></script>
 </head>
 <body>
-포트폴리오
+<aside>
+	<div class="fold" style="display: none;"> <i id="detail" class="fas fa-eye folding"> 자세히</i></div>
+	<div class="detail">
+		<i id="fold" class="fas fa-eye-slash folding"> 접기</i>
+		프로젝트명: 포트폴리오
+		소개: 개인프로젝트
+		개발환경: 
+		사용기술: 
+		팀원: 1명
+	</div>
+</aside>
+<section>
+	<article>
+		<div>기능 상세 설명 : 가나다라마바사</div>
+		<div>
+			코드
+			<img src="" alt="코드 캡쳐">
+		</div>
+		<div>코드 상세 설명 : 아자차카타파하</div>
+		<div>
+			실제 동작 화면		
+			<img src="" alt="실제 동작 캡쳐">
+		</div>
+	</article>
+</section>
+<script>
+	document.querySelectorAll('.folding').forEach(fold => {
+		fold.addEventListener('click', function(){
+			if(fold.id == 'detail')
+				document.querySelectorAll('#detail')[0].style.display = 'block';
+			else
+				document.querySelectorAll('#detail')[0].style.display = 'block';
+		})
+	});
+</script>
 </body>
 </html>
