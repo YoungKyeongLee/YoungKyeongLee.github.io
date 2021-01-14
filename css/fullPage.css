@@ -110,13 +110,18 @@
 		text-align: center;
 	}
 	section article.art_2 img.photoID{
-		width: 250px;
+		width: 150px;
 	}
 	section article.art_2 .article_txt{
 		height: 40px;
 	}
 	section article.art_2 h2.article_sub{
 		margin-top: 0px;
+	}
+	section article.art_2 .explain{
+		font-size: 10pt;
+		color : red;
+		font-weight: bold;
 	}
 	section article.art_2 .skills{
 		display: inline-block;
@@ -128,12 +133,14 @@
 		width: 70px;
 		height: 85px;
 		font-size: 14pt;
+		margin-bottom: 10px;
 	}
 	section article.art_2 .imgBox .skill{
 		display: inline-block;
 		width : 55px;
 		height: 55px;
 		border: 1px solid #BDBDBD;
+		cursor: pointer;
 	}
 	section article.art_3 .article_div{
 	margin: auto;
@@ -171,7 +178,7 @@
 		display: block;
 		height: 70px;
 		line-height: 70px;
-		width: 200px;
+		width: 280PX;
 		font-size: 30pt;
 		text-align: center;
 		margin: auto;
