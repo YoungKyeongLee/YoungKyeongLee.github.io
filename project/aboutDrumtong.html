@@ -4,40 +4,119 @@
 <meta charset="UTF-8">
 <title>Insert title here</title><!-- 폰트어썸 -->
 <script src="https://kit.fontawesome.com/2f6ba02431.js" crossorigin="anonymous"></script>
+<style>
+body{
+	background-color: black;
+}
+aside.aside{
+	position: fixed;
+	display: block;
+	background-color: #EAEAEA;
+	padding: 5px;
+	border-radius: 15px;
+	max-width: 280px;
+	border: 2px solid #BDBDBD;
+}
+aside.aside div i.folding{
+	float: right;
+	padding: 5px;
+	border-radius: 10px;
+}
+aside.aside div i.folding:hover{
+	cursor: pointer;
+	background-color: grey;
+	color: white;
+	font-weight: bold;
+}
+h1.title{
+	text-align: center;
+	color: white;
+}
+section{
+	text-align: center;
+	width: 1000px;
+	border: 10px solid #BDBDBD;
+	margin: auto;
+	background: white;
+}
+section *{
+
+}
+</style>
 </head>
 <body>
-<aside>
-	<div class="fold" style="display: none;"> <i id="detail" class="fas fa-eye folding"> 자세히</i></div>
+<aside class="aside">
+	<div class="fold" style="display: none;">
+		프로젝트<i id="detail" class="fas fa-eye folding"> 자세히</i>
+	</div>
 	<div class="detail">
-		<i id="fold" class="fas fa-eye-slash folding"> 접기</i>
+		<p>
 		프로젝트명: 드럼통
+		</p>
+		<p>
 		소개: O2O 세탁소 웹 페이지, 2개의 페이지 운영(고객, 사업자)
-		개발환경: 
+		</p>
+		<p>
+		개발환경:
+		</p>
+		<p>
 		사용기술: 
+		</p>
+		<p>
 		팀원: 6명
+		</p>
+		<i id="fold" class="fas fa-eye-slash folding"> 접기</i>
 	</div>
 </aside>
+<h1 class="title">소개</h1>
 <section>
 	<article>
-		<div>기능 상세 설명 : 가나다라마바사</div>
+		<h2>핵심 기능 이름</h2>
+		<div>핵심 기능 설명 : 로그인, 고객 측과 사업자 측을 같은 로그인 메서드를 이용해 구현합니다.</div>
+		<div>[ 코 &nbsp;&nbsp; 드 ]</div>
 		<div>
-			코드
-			<img src="" alt="코드 캡쳐">
+			<img src="../img/java.png" alt="코드 캡쳐">
 		</div>
 		<div>코드 상세 설명 : 아자차카타파하</div>
+		<div>[ 동 &nbsp;&nbsp; 작 ]</div>
 		<div>
-			실제 동작 화면		
-			<img src="" alt="실제 동작 캡쳐">
+			<img src="../img/java.png" alt="실제 동작 캡쳐">
+		</div>
+	</article>
+	<article>
+		<h2>핵심 기능 이름</h2>
+		<div>핵심 기능 설명 : 로그인, 고객 측과 사업자 측을 같은 로그인 메서드를 이용해 구현합니다.</div>
+		<div>[ 코 &nbsp;&nbsp; 드 ]</div>
+		<div>
+			<img src="../img/java.png" alt="코드 캡쳐">
+		</div>
+		<div>코드 상세 설명 : 아자차카타파하</div>
+		<div>[ 동 &nbsp;&nbsp; 작 ]</div>
+		<div>
+			<img src="../img/java.png" alt="실제 동작 캡쳐">
+		</div>
+	</article>
+	<article>
+		<h2>핵심 기능 이름</h2>
+		<div>핵심 기능 설명 : 로그인, 고객 측과 사업자 측을 같은 로그인 메서드를 이용해 구현합니다.</div>
+		<div>[ 코 &nbsp;&nbsp; 드 ]</div>
+		<div>
+			<img src="../img/java.png" alt="코드 캡쳐">
+		</div>
+		<div>코드 상세 설명 : 아자차카타파하</div>
+		<div>[ 동 &nbsp;&nbsp; 작 ]</div>
+		<div>
+			<img src="../img/java.png" alt="실제 동작 캡쳐">
 		</div>
 	</article>
 </section>
 <script>
 	document.querySelectorAll('.folding').forEach(fold => {
 		fold.addEventListener('click', function(){
-			if(fold.id == 'detail')
-				document.querySelectorAll('#detail')[0].style.display = 'block';
-			else
-				document.querySelectorAll('#detail')[0].style.display = 'block';
+			document.querySelectorAll('aside div').forEach(type =>{
+				if(fold.id === type.className)	type.style.display = 'block';
+				else							type.style.display = 'none';
+			})
 		})
 	});
 </script>
