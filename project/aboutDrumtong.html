@@ -2,68 +2,44 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title><!-- 폰트어썸 -->
+<title>DRUMTONG</title><!-- 폰트어썸 -->
 <script src="https://kit.fontawesome.com/2f6ba02431.js" crossorigin="anonymous"></script>
-<style>
-body{
-	background-color: black;
-}
-aside.aside{
-	position: fixed;
-	display: block;
-	background-color: #EAEAEA;
-	padding: 5px;
-	border-radius: 15px;
-	max-width: 280px;
-	border: 2px solid #BDBDBD;
-}
-aside.aside div i.folding{
-	float: right;
-	padding: 5px;
-	border-radius: 10px;
-}
-aside.aside div i.folding:hover{
-	cursor: pointer;
-	background-color: grey;
-	color: white;
-	font-weight: bold;
-}
-h1.title{
-	text-align: center;
-	color: white;
-}
-section{
-	text-align: center;
-	width: 1000px;
-	border: 10px solid #BDBDBD;
-	margin: auto;
-	background: white;
-}
-section *{
-
-}
-</style>
+<link href="../css/projectCSS.css" rel="stylesheet">
 </head>
 <body>
 <aside class="aside">
 	<div class="fold" style="display: none;">
-		프로젝트<i id="detail" class="fas fa-eye folding"> 자세히</i>
+		&nbsp;<b>드럼통 ···</b> &nbsp;<i id="detail" class="fas fa-eye folding"> 자세히</i>
 	</div>
 	<div class="detail">
 		<p>
-		프로젝트명: 드럼통
+			<h3>프로젝트명: 드럼통</h3>
+		<p>
+		<b>소개</b>
 		</p>
 		<p>
-		소개: O2O 세탁소 웹 페이지, 2개의 페이지 운영(고객, 사업자)
+		O2O 세탁소 웹 페이지, 2개의 페이지 운영(고객, 사업자)
 		</p>
 		<p>
-		개발환경:
+		<b>개발환경</b>
 		</p>
 		<p>
-		사용기술: 
+			개발환경, 개발환경
 		</p>
 		<p>
-		팀원: 6명
+			<b>사용기술</b>
+		</p>
+		<p>
+			사용기술, 사용기술
+		</p>
+		<p>
+			<b>팀원</b>
+		</p>
+		<p>
+			<b>고객 페이지</b> : 이영경[백엔드], 이건욱[조장,백엔드], 김상재[프론트엔드], 황도현[프론트엔드]
+		</p>
+		<p>
+			<b>사업자 페이지</b> : 이영경[백엔드], 이건욱[조장, 백엔드], 양의진[프론트엔드], 이승원[프론트엔드]
 		</p>
 		<i id="fold" class="fas fa-eye-slash folding"> 접기</i>
 	</div>
@@ -73,12 +49,12 @@ section *{
 	<article>
 		<h2>핵심 기능 이름</h2>
 		<div>핵심 기능 설명 : 로그인, 고객 측과 사업자 측을 같은 로그인 메서드를 이용해 구현합니다.</div>
-		<div>[ 코 &nbsp;&nbsp; 드 ]</div>
+		<div><b>[ 코 &nbsp;&nbsp; 드 ]</b></div>
 		<div>
 			<img src="../img/java.png" alt="코드 캡쳐">
 		</div>
 		<div>코드 상세 설명 : 아자차카타파하</div>
-		<div>[ 동 &nbsp;&nbsp; 작 ]</div>
+		<div><b>[ 동 &nbsp;&nbsp; 작 ]</b></div>
 		<div>
 			<img src="../img/java.png" alt="실제 동작 캡쳐">
 		</div>
@@ -86,39 +62,17 @@ section *{
 	<article>
 		<h2>핵심 기능 이름</h2>
 		<div>핵심 기능 설명 : 로그인, 고객 측과 사업자 측을 같은 로그인 메서드를 이용해 구현합니다.</div>
-		<div>[ 코 &nbsp;&nbsp; 드 ]</div>
+		<div><b>[ 코 &nbsp;&nbsp; 드 ]</b></div>
 		<div>
 			<img src="../img/java.png" alt="코드 캡쳐">
 		</div>
 		<div>코드 상세 설명 : 아자차카타파하</div>
-		<div>[ 동 &nbsp;&nbsp; 작 ]</div>
-		<div>
-			<img src="../img/java.png" alt="실제 동작 캡쳐">
-		</div>
-	</article>
-	<article>
-		<h2>핵심 기능 이름</h2>
-		<div>핵심 기능 설명 : 로그인, 고객 측과 사업자 측을 같은 로그인 메서드를 이용해 구현합니다.</div>
-		<div>[ 코 &nbsp;&nbsp; 드 ]</div>
-		<div>
-			<img src="../img/java.png" alt="코드 캡쳐">
-		</div>
-		<div>코드 상세 설명 : 아자차카타파하</div>
-		<div>[ 동 &nbsp;&nbsp; 작 ]</div>
+		<div><b>[ 동 &nbsp;&nbsp; 작 ]</b></div>
 		<div>
 			<img src="../img/java.png" alt="실제 동작 캡쳐">
 		</div>
 	</article>
 </section>
-<script>
-	document.querySelectorAll('.folding').forEach(fold => {
-		fold.addEventListener('click', function(){
-			document.querySelectorAll('aside div').forEach(type =>{
-				if(fold.id === type.className)	type.style.display = 'block';
-				else							type.style.display = 'none';
-			})
-		})
-	});
-</script>
+<script type="text/javascript" src="../js/projectButton.js"></script>
 </body>
 </html>
