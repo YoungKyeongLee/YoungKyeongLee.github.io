@@ -99,7 +99,7 @@
 	 	display: flex;
 	}
 	section article.art_2 .article_part{
-		width: 350px;
+		width: 400px;
 		height: 400px;
 	}
 	section article.art_2 .article_part div{
@@ -108,6 +108,8 @@
 	}
 	section article.art_2 .photoDiv{
 		text-align: center;
+		width: 250px;
+		height: 400px;
 	}
 	section article.art_2 img.photoID{
 		width: 150px;
