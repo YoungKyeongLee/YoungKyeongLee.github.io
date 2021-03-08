@@ -19,10 +19,10 @@
 			<div class="header_text"><a>YoungKyeong's</a> <a>Portfolio</a></div>
 			<nav class="header_nav">
 				<ul class="header_nav_menu">
-					<li onclick="location.href='#art_1'" class="short">HOME</li>
-					<li onclick="location.href='#art_2'" class="long">PROFILE</li>
-					<li onclick="location.href='#art_3'" class="long">PROJECT</li>
-					<li onclick="location.href='#art_4'" class="short">SITE</li>
+					<li onclick="eventFunc('art_1')" class="short">HOME</li>
+					<li onclick="eventFunc('art_2')" class="long">PROFILE</li>
+					<li onclick="eventFunc('art_3')" class="long">PROJECT</li>
+					<li onclick="eventFunc('art_4')" class="short">SITE</li>
 				</ul>
 			</nav>
 		</div>
@@ -114,16 +114,12 @@
 						<img alt="드럼통 프로젝트" src="img/drumtong.png">
 					</div>
 					<div class="article_inner_part_txt">
-						<h2>드럼통 <button onclick="window.open('project/aboutDrumtong.html')">코드 자세히...</button></h2>
+						<h2>드럼통 <button onclick="window.open('https://github.com/lgu3877/DrumTong')">코드 자세히...</button></h2>
 						<div>[팀 프로젝트]</div>
 						<div>고객 사이트 링크</div>
 						<div>사업자 사이트링크</div>
 						<div>
-							드럼통 드럼통 드럼통 드럼통 드럼통
-							드럼통 드럼통 드럼통 드럼통 드럼통
-							드럼통 드럼통 드럼통 드럼통 드럼통
-							드럼통 드럼통 드럼통 드럼통 드럼통
-							드럼통 드럼통 드럼통 드럼통 드럼통
+							세탁소 O2O 서비스로, 고객과 사업자를 연결해주는 웹 사이트 입니다.
 						</div>
 					</div>
 				</div>
@@ -134,13 +130,9 @@
 					<div class="article_inner_part_txt">
 						<h2>플래너 <button onclick="window.open('https://github.com/YoungKyeongLee/plan')">코드 자세히...</button></h2>
 						<div>[개인 프로젝트]</div>
-						<div>링크</div>
+						<div>[링크]</div>
 						<div>
-							플래너 플래너 플래너 플래너 플래너
-							플래너 플래너 플래너 플래너 플래너
-							플래너 플래너 플래너 플래너 플래너
-							플래너 플래너 플래너 플래너 플래너
-							플래너 플래너 플래너 플래너 플래너
+							자신만의 일정을 관리할 수 있는 플래너입니다.
 						</div>
 					</div>
 				</div>
@@ -151,12 +143,9 @@
 					<div class="article_inner_part_txt">
 						<h2>포트폴리오 <button onclick="window.open('https://github.com/YoungKyeongLee/YoungKyeongLee.github.io')">코드 자세히...</button></h2>
 						<div>[개인 프로젝트]</div>
-						<div>링크</div>
+						<div>https://github.com/YoungKyeongLee</div>
 						<div>
-							포트폴리오 포트폴리오 포트폴리오 포트폴리오 포트폴리오
-							포트폴리오 포트폴리오 포트폴리오 포트폴리오 포트폴리오
-							포트폴리오 포트폴리오 포트폴리오 포트폴리오 포트폴리오
-							포트폴리오 포트폴리오 포트폴리오 포트폴리오 포트폴리오
+							개인 포트폴리오 웹 사이트 입니다.
 						</div>
 					</div>
 					
@@ -170,10 +159,10 @@
 			<h1>SITE</h1>
 			<div class="article_div">
 				<div onclick="window.open('https://github.com/YoungKyeongLee')" class="button">GITHUB</div>
-				<div onclick="location.href='#'" class="button">BLOG</div>
-				<div onclick="location.href='#'" class="button">DRUMTONG</div>
-				<div onclick="location.href='#'" class="button">PLAN</div>
-				<div onclick="location.href='#'" class="button">PORTFOLIO</div>
+				<div onclick="window.open('https://dynamic-programmer.tistory.com')" class="button">BLOG</div>
+				<div onclick="alert('배포 준비중입니다.')" class="button">DRUMTONG</div>
+				<div onclick="alert('배포 준비중입니다.')" class="button">PLAN</div>
+				<div onclick="window.open('https://youngkyeonglee.github.io')" class="button">PORTFOLIO</div>
 			</div>
 		</article>
 	</section>
@@ -191,9 +180,14 @@
 			깃허브 주소 : https://github.com/YoungKyeongLee
 		</div>
 		<div class="footer_text">
-			블로그 주소 : 추후 업데이트 예정
+			블로그 주소 : https://dynamic-programmer.tistory.com
 		</div>
 	</footer>
+	<script>
+		function eventFunc(isMe){
+			document.getElementById(isMe).scrollIntoView();
+		}
+	</script>
 	<script>
 		document.querySelectorAll('.skills .imgBox').forEach(sk => {
 			sk.children[0].addEventListener('click', function(){
