@@ -152,6 +152,9 @@
 		display: flex;
 		width: 900px;
 	}
+	section article.art_3 .article_inner_part_img{
+		width: 400px;
+	}
 	section article.art_3 .article_inner_part_img img{
 		width: 400px;
 	}
